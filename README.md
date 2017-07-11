@@ -1,4 +1,4 @@
-# Avisosupp
+# Post en tiempo real mediante angular y firebase, utilizando patrones de diseño de angularmaterial
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.1.
 
