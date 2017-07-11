@@ -1,0 +1,42 @@
+<md-grid-list cols="1" rowHeight="500px">
+  <md-grid-tile>
+    <form class="example-form">
+
+      <table class="example-full-width" cellspacing="0">
+        <tr>
+          <td>
+            <md-input-container class="example-full-width">
+              <input mdInput placeholder="Titulo" [(ngModel)]="title" name="title">
+            </md-input-container>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <md-input-container class="example-full-width">
+              <input mdInput placeholder="Subtitulo" [(ngModel)]="subtitle" name="subtitle">
+            </md-input-container>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <md-input-container class="example-full-width">
+              <textarea mdInput placeholder="Publicación" [(ngModel)]="publication" rows="4" name="publication"></textarea>
+            </md-input-container>
+          </td>
+        </tr>
+         <tr>
+          <td>
+            <md-input-container class="example-full-width">
+              <input mdInput placeholder="Autor" [(ngModel)]="author" name="author">
+            </md-input-container>
+          </td>
+        </tr>
+      </table>
+      <div class="example-button-row">
+        <button md-raised-button (click)="enviar()">Publicar</button>
+      </div>
+    </form>
+  </md-grid-tile>
+</md-grid-list>
+
+

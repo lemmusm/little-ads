@@ -1,0 +1,6 @@
+@import '~https://fonts.googleapis.com/css?family=Fira+Sans:100,200,300,400';
+
+.box-card{height: 500px; color: #333; width: 100%}
+.center-card{margin: 0 auto}
+.img-center{text-align: center}
+.mat-card-header .mat-card-subtitle{margin-top:-18px}

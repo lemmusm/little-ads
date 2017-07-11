@@ -1,0 +1,8 @@
+  <div class="card">
+    <div class="card-block" *ngFor="let datos of _dn.datosPublication | async">
+      <h4 class="card-title">{{ datos.title | uppercase }}</h4>
+      <h6 class="card-subtitle mb-2">{{ datos.subtitle }}</h6>
+      <p class="card-text">{{ datos.publication }}</p>
+      <p class="card-autor">{{ datos.author  | uppercase}}</p>
+    </div>
+  </div>

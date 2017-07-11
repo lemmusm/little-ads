@@ -1,0 +1,28 @@
+<div class="box-card">
+  <md-card class="example-card center-card " *ngFor="let datos of _dh.datosAyuda | async">
+    <md-card-header>
+      <div md-card-avatar class="example-header-image" ></div>
+      <md-card-title>{{datos.nombre}}</md-card-title>
+      <md-card-subtitle class="subtitle">{{datos.makeit}}</md-card-subtitle>
+      <md-card-subtitle class="subtitle"><a href="http://mlemus.com/">{{datos.website}}</a></md-card-subtitle>
+      <md-card-subtitle class="subtitle">{{datos.twitter}}</md-card-subtitle>
+    </md-card-header>
+      <img md-card-image src="./assets/img/angularm.png">
+    <md-card-content>
+      <p>
+        {{datos.biografia}}
+      </p>
+      <button md-menu-item routerLinkActive="active" [routerLink]="['aviso']">
+          <md-icon>code</md-icon>
+          <span> <a href=""> Clone or download from Github</a></span>
+      </button>
+
+    </md-card-content>
+
+  <div class="img-center">
+      <a href="https://material.angular.io/" target="_blank"><span><img src="./assets/img/logomaterial.png" alt="angular material" width="42px"></span></a>
+       <a href="https://angular.io/" target="_blank"><span><img src="./assets/img/logoangular.png" alt="angular" width="42px"></span></a>
+       <a href="https://firebase.google.com" target="_blank"><span><img src="./assets/img/logofirebase.png" alt="firebase" width="42px"></span></a>  
+  </div>
+ </md-card>
+</div>

@@ -1,0 +1,20 @@
+
+<md-toolbar>
+  <button md-icon-button [mdMenuTriggerFor]="menu">
+  <md-icon>more_vert</md-icon>
+</button>
+<md-menu #menu="mdMenu">
+  <button md-menu-item routerLinkActive="active" [routerLink]="['publicar']">
+        <md-icon>tune</md-icon>
+        <span>Publicar</span>
+  </button>
+  <button md-menu-item routerLinkActive="active" [routerLink]="['mostrar']">
+        <md-icon>chrome_reader_mode</md-icon>
+        <span>Mostrar</span>
+  </button>
+  <button md-menu-item routerLinkActive="active" [routerLink]="['help']">
+        <md-icon>help</md-icon>
+        <span>Ayuda</span>
+  </button>
+</md-menu>
+</md-toolbar>
